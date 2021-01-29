@@ -4,10 +4,11 @@
       <Card
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
-        projectDescription="Find financial empowerment with access to quick, affordable microloans.">
-      <template v-slot:icon>
+        projectDescription="Find financial empowerment with access to quick, affordable microloans."
+        isFullProject>
+      <!-- <template v-slot:icon>
         <img src="../assets/images/icon1.png" alt="icon">
-      </template>      
+      </template>  -->     
       <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>
@@ -18,10 +19,11 @@
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
+        isFullProject
         cardColor="#7EA3DB">
-        <template v-slot:icon>
+        <!-- <template v-slot:icon>
           <img src="../assets/images/icon1.png" alt="icon">
-        </template>      
+        </template>   -->    
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>
@@ -32,10 +34,11 @@
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
+        isFullProject
         cardColor="#FF9850">
-        <template v-slot:icon>
+        <!-- <template v-slot:icon>
           <img src="../assets/images/icon1.png" alt="image">
-        </template>         
+        </template>   -->       
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>  
@@ -47,9 +50,9 @@
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         cardColor="#14D182">
-        <template v-slot:icon>
+        <!-- <template v-slot:icon>
           <img src="../assets/images/icon1.png" alt="icon">
-        </template>
+        </template> -->
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>        

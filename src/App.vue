@@ -13,7 +13,6 @@ import Navbar from './components/Navbar.vue'
 import PictureComponent from './components/PictureComponent.vue'
 import PersonalInfo from './components/PersonalInfo.vue'
 import CardsContainer from './components/CardsContainer.vue'
-import './assets/styles/scss/main.scss'
 import './assets/styles/scss/global.scss'
 
 export default defineComponent({
