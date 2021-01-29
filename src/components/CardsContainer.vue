@@ -1,58 +1,46 @@
 <template>
-  <div class="columns">
-    <div class="column">
+  <div class="columns main-container">
+    <div class="column child-column">
       <Card
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         isFullProject>
-      <!-- <template v-slot:icon>
-        <img src="../assets/images/icon1.png" alt="icon">
-      </template>  -->     
       <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>
       </Card>
     </div>
-    <div class="column">
+    <div class="column child-column">
       <Card
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         isFullProject
         cardColor="#7EA3DB">
-        <!-- <template v-slot:icon>
-          <img src="../assets/images/icon1.png" alt="icon">
-        </template>   -->    
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>
       </Card>
     </div>
-    <div class="column">
+    <div class="column child-column">
       <Card
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         isFullProject
-        cardColor="#FF9850">
-        <!-- <template v-slot:icon>
-          <img src="../assets/images/icon1.png" alt="image">
-        </template>   -->       
+        cardColor="#FF9850">    
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>  
       </Card>
     </div>
-    <div class="column">
+    <div class="column child-column">
       <Card
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         cardColor="#14D182">
-        <!-- <template v-slot:icon>
-          <img src="../assets/images/icon1.png" alt="icon">
-        </template> -->
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
         </template>        
@@ -76,4 +64,18 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+  .main-container {
+    @include from($desktop) {
+      flex-direction: column;
+      align-items: center;
+      .child-column {
+        max-width: 80vw;
+      }
+    }
+    @include from($tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

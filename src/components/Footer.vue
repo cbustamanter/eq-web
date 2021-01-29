@@ -1,52 +1,31 @@
 <template>
-  <footer class="fs-14">
-      <div class="columns">
-          <div class="column">
-              <p class="has-text-footerText has-text-centered px-4">
-                  Yea that’s all for now, more projects coming soon :)
-              </p>
-          </div>
+  <footer class="fs-14 pb-4">
+    <div class="columns">
+      <div class="column">
+        <p class="has-text-centered px-4 has-text-footerText">
+          Yea that’s all for now, more projects coming soon :)
+        </p>
       </div>
-      <div class="columns">
-          <div class="column centered">
-              <div class="columns has-text-footerText pb-4">
-                  <div class="column has-text centered px-5 p-1">Ernesto</div>
-                  <div class="column centered px-5 p-0">
-                      <div class="divider"></div>
-                  </div>
-                  <div class="column has-text centered px-5 p-1">Digital Product Designer</div>
-              </div>
-          </div>
-      </div>
-      <div class="columns">
-          <div class="column centered">
-              <div class="columns has-text-footerText pb-4">
-                  <div class="column has-text centered px-5 p-1">Social</div>
-                  <div class="column centered px-5 p-0">
-                      <div class="divider"></div>
-                  </div>
-                  <div class="column has-text centered px-5 p-1">Linkedin, Instagram, Behance</div>
-              </div>
-          </div>
-      </div>
-      <div class="columns pb-6">
-          <div class="column centered">
-              <div class="columns has-text-footerText pb-">
-                  <div class="column has-text centered px-5 p-1">Contact</div>
-                  <div class="column centered px-5 p-0">
-                      <div class="divider"></div>
-                  </div>
-                  <div class="column has-text centered px-5 p-1">hola@ernestoq.com</div>
-              </div>
-          </div>
-      </div>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <FooterItem msg1="Ernesto" msg2="Digital Product Designer" />
+            <FooterItem msg1="Social" msg2="Linkedin, Instagram, Behance" />
+            <FooterItem msg1="Contact" msg2="hola@ernestoq.com" />
+        </div>
+    </div>    
   </footer>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import FooterItem from "./FooterItem.vue";
 
 export default defineComponent({
+  name: "Footer",
+  components: {
+    FooterItem,
+  },
   setup() {
     return {};
   },
@@ -54,9 +33,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-    .divider {
-        width: 14px;
-        background: $customGrey;
-        height: 1px;
-    }
+
 </style>
