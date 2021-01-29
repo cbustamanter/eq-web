@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-mobile has-text-centered px-6">
         <p class="has-text-white has-text-weight-bold is-size-4">
-          I'm <span class="has-text-lblue">Ernesto</span>, a Lima based User Interface & Interaction Designer.
+          I'm <span class="has-text-lblue">Ernesto Q</span>, a Lima based User Interface & Interaction Designer.
         </p>
       </div>
     </div>
