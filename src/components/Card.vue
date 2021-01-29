@@ -2,7 +2,7 @@
   <div :style="'background:'+cardColor" class="card-main mx-4 my-6 has-text-centered">
       <div class="columns py-0 my-0">
           <div class="column">
-              <img :src="'src/assets/images/'+icon+'.png'" :alt="icon">
+            <slot name="icon"></slot>
           </div>
       </div>
       <div class="columns py-0 my-0">
@@ -22,7 +22,7 @@
       </div>
       <div class="columns py-4">
           <div class="column">
-              <img :src="'src/assets/images/'+projectImage+'.png'" :alt="projectImage">
+            <slot name="image"></slot>              
           </div>
       </div>      
   </div>
@@ -34,10 +34,6 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "Card",
   props: {
-    icon: {
-      type: String,
-      required: true,
-    },
     projectName: {
       type: String,
       required: true,
