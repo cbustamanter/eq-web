@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="columns">
-      <div class="column is-mobile has-text-centered px-3">
+      <div class="column is-mobile has-text-centered px-6">
         <p class="has-text-customGrey is-size-6">
             Passionate about creating innovative and meaningful digital products experiences that connects design with human behaviour.
         </p>
