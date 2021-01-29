@@ -15,7 +15,7 @@
                 </div>
               </div>
             </div>
-            <div class="column is-12p-1 has-text-centered-mobile has-text-footerText">
+            <div class="column is-12 p-1 has-text-centered-mobile has-text-footerText">
               {{ msg2 }}
             </div>
           </div>

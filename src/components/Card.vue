@@ -6,20 +6,21 @@
     <div class="columns py-4 my-0">
       <div class="column centered-container is-6">
         <div class="columns is-multiline">
-          <div class="column is-10 is-offset-2 pl-0-tablet">
+          <div class="column is-10 is-offset-2 paddings">
             <h3 class="has-text-white opacity-text">{{ projectName }}</h3>
           </div>
-          <div class="column is-10 is-offset-2 pl-0-tablet">
+          <div class="column is-10 is-offset-2 paddings">
             <h1 class="has-text-white has-text-weight-bold">
               {{ projectTitle }}
             </h1>
           </div>
-          <div class="column is-10 is-offset-2 pl-0-tablet">
+          <div class="column is-10 is-offset-2 paddings">
             <h2 class="has-text-white">{{ projectDescription }}</h2>
           </div>
-          <div class="column btn1 is-4-fullhd is-offset-2 is-6-tablet">
+          <div class="column btn1 is-5-fullhd is-offset-2 is-6-tablet">
             <div
-              class="columns rounded has-background-dark-blue is-mobile has-text-white has-text-weight-bold"
+              class="columns rounded has-background-dark-blue is-mobile has-text-white has-text-weight-bold pointer"
+              @click="goTo(projectUrl)"
               v-if="isFullProject"
             >
               <div class="column px-5 has-text-left is-9">Full Project</div>
@@ -47,8 +48,9 @@
       </div>
       <div class="column btn2 is-4-fullhd is-offset-2 is-offset-1-mobile is-10-mobile">
         <div
-          class="columns rounded has-background-dark-blue is-mobile has-text-white has-text-weight-bold"
+          class="columns rounded has-background-dark-blue is-mobile has-text-white has-text-weight-bold pointer"
           v-if="isFullProject"
+          @click="goTo(projectUrl)"
         >
           <div class="column px-5 has-text-left is-9">Full Project</div>
           <div class="column">
@@ -91,10 +93,20 @@ export default defineComponent({
       required: false,
       default: false,
     },
+    projectUrl: {
+      type: String,
+      required: false,
+      default: false,
+    },
   },
   setup() {
     return {};
   },
+  methods: {
+    goTo (url: string) {
+      window.open(url)
+    },
+  }
 });
 </script>
 
@@ -125,12 +137,32 @@ h1 {
   @include until($tablet) {
     display: block;
   }
-}
-.btn1 {
-  @include until($tablet) {
+   @include from($tablet) {
     display: none !important;
   }
 }
+
+.btn1 {
+  padding-top: 1.3rem;
+  @include until($tablet) {
+    display: none;
+  }
+   @include from($tablet) {
+    display: block !important;
+  }
+}
+
+.paddings {
+  @include from($tablet) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  @include until($tablet) {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
 .card-main {
   border-radius: 8px;
 }

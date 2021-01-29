@@ -5,6 +5,7 @@
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
+        projectUrl="https://www.figma.com/proto/g8ZPaojhD2QHD3Rd6Gy7WCsN/EQ---Portafolio---2021?node-id=513%3A79&scaling=min-zoom"
         isFullProject>
       <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
@@ -17,6 +18,7 @@
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         isFullProject
+        projectUrl="https://www.figma.com/proto/g8ZPaojhD2QHD3Rd6Gy7WCsN/EQ---Portafolio---2021?node-id=513%3A79&scaling=min-zoom"
         cardColor="#7EA3DB">
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
@@ -29,6 +31,7 @@
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         isFullProject
+        projectUrl="https://www.figma.com/proto/g8ZPaojhD2QHD3Rd6Gy7WCsN/EQ---Portafolio---2021?node-id=513%3A79&scaling=min-zoom"
         cardColor="#FF9850">    
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
@@ -40,6 +43,7 @@
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
+        projectUrl="https://www.figma.com/proto/g8ZPaojhD2QHD3Rd6Gy7WCsN/EQ---Portafolio---2021?node-id=513%3A79&scaling=min-zoom"
         cardColor="#14D182">
         <template v-slot:image>
           <img src="../assets/images/image1.png" alt="projectImage">
@@ -70,7 +74,7 @@ export default defineComponent({
       flex-direction: column;
       align-items: center;
       .child-column {
-        max-width: 80vw;
+        max-width: 1050px;
       }
     }
     @include from($tablet) {
