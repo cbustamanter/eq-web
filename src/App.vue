@@ -4,6 +4,7 @@
     <PictureComponent />
     <PersonalInfo />
     <CardsContainer />
+    <Footer />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Navbar from './components/Navbar.vue'
 import PictureComponent from './components/PictureComponent.vue'
 import PersonalInfo from './components/PersonalInfo.vue'
 import CardsContainer from './components/CardsContainer.vue'
+import Footer from './components/Footer.vue'
 import './assets/styles/scss/global.scss'
 
 export default defineComponent({
@@ -21,7 +23,8 @@ export default defineComponent({
     Navbar,
     PictureComponent,
     PersonalInfo,
-    CardsContainer
+    CardsContainer,
+    Footer
   }
 })
 </script>

@@ -35,12 +35,15 @@ $lblue: #09BBEB;
 $lblue-invert: findColorInvert($lblue);
 $customGrey: #9898A9; 
 $customGrey-invert: findColorInvert($customGrey);
+$footerText: #66667B; 
+$footerText-invert: findColorInvert($footerText);
 
 @import "../node_modules/bulma/sass/utilities/derived-variables";
 $addColors: (
   "dark-blue":($dark-blue, $dark-blue-invert), //adds variable dark-blue to addcolors List
   "lblue":($lblue, $lblue-invert),
   "customGrey":($customGrey, $customGrey-invert),
+  "footerText":($footerText, $footerText-invert),
 );
 $colors: map-merge($colors, $addColors); // adds colors in addColors List to $colors variable that is global
 
