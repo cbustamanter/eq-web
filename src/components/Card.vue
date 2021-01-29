@@ -46,10 +46,6 @@ export default defineComponent({
       type: String,
       required: true,
     },
-    projectImage: {
-      type: String,
-      required: true,
-    },
     cardColor: {
       type: String,
       required: false,

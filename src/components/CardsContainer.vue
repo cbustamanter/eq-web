@@ -2,11 +2,9 @@
   <div class="columns">
     <div class="column">
       <Card
-        icon="icon1"
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
-        projectDescription="Find financial empowerment with access to quick, affordable microloans."
-        projectImage="image1">
+        projectDescription="Find financial empowerment with access to quick, affordable microloans.">
       <template v-slot:icon>
         <img src="../assets/images/icon1.png" :alt="icon">
       </template>      
@@ -17,11 +15,9 @@
     </div>
     <div class="column">
       <Card
-        icon="icon1"
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
-        projectImage="image1"
         cardColor="#7EA3DB">
         <template v-slot:icon>
           <img src="../assets/images/icon1.png" :alt="icon">
@@ -33,11 +29,9 @@
     </div>
     <div class="column">
       <Card
-        icon="icon1"
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
-        projectImage="image1"
         cardColor="#FF9850">
         <template v-slot:icon>
           <img src="../assets/images/icon1.png" :alt="icon">
@@ -49,11 +43,9 @@
     </div>
     <div class="column">
       <Card
-        icon="icon1"
         projectName="Cubicol"
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
-        projectImage="image1"
         cardColor="#14D182">
         <template v-slot:icon>
           <img src="../assets/images/icon1.png" :alt="icon">
