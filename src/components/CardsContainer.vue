@@ -6,10 +6,10 @@
         projectTitle="Education management app for teachers"
         projectDescription="Find financial empowerment with access to quick, affordable microloans.">
       <template v-slot:icon>
-        <img src="../assets/images/icon1.png" :alt="icon">
+        <img src="../assets/images/icon1.png" alt="icon">
       </template>      
       <template v-slot:image>
-          <img src="../assets/images/image1.png" :alt="projectImage">
+          <img src="../assets/images/image1.png" alt="projectImage">
         </template>
       </Card>
     </div>
@@ -20,10 +20,10 @@
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         cardColor="#7EA3DB">
         <template v-slot:icon>
-          <img src="../assets/images/icon1.png" :alt="icon">
+          <img src="../assets/images/icon1.png" alt="icon">
         </template>      
         <template v-slot:image>
-          <img src="../assets/images/image1.png" :alt="projectImage">
+          <img src="../assets/images/image1.png" alt="projectImage">
         </template>
       </Card>
     </div>
@@ -34,10 +34,10 @@
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         cardColor="#FF9850">
         <template v-slot:icon>
-          <img src="../assets/images/icon1.png" :alt="icon">
+          <img src="../assets/images/icon1.png" alt="image">
         </template>         
         <template v-slot:image>
-          <img src="../assets/images/image1.png" :alt="projectImage">
+          <img src="../assets/images/image1.png" alt="projectImage">
         </template>  
       </Card>
     </div>
@@ -48,10 +48,10 @@
         projectDescription="Find financial empowerment with access to quick, affordable microloans."
         cardColor="#14D182">
         <template v-slot:icon>
-          <img src="../assets/images/icon1.png" :alt="icon">
+          <img src="../assets/images/icon1.png" alt="icon">
         </template>
         <template v-slot:image>
-          <img src="../assets/images/image1.png" :alt="projectImage">
+          <img src="../assets/images/image1.png" alt="projectImage">
         </template>        
       </Card>
     </div>
