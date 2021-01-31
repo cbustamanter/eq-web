@@ -23,7 +23,7 @@
               @click="goTo(projectUrl)"
               v-if="isFullProject"
             >
-              <div class="column px-5 has-text-left is-9">Full Project</div>
+              <div class="column px-5 has-text-left is-9">Ver proyecto</div>
               <div class="column">
                 <img src="../assets/svg/arrow.svg" />
               </div>
@@ -32,7 +32,7 @@
               class="columns rounded opacity-button has-text-weight-bold"
               v-else
             >
-              <div class="column px-5 has-text-centered">Coming soon</div>
+              <div class="column px-5 has-text-centered">En desarrollo</div>
             </div>
           </div>
         </div>
