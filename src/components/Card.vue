@@ -17,14 +17,14 @@
           <div class="column is-10 is-offset-2 paddings">
             <h2 class="has-text-white">{{ projectDescription }}</h2>
           </div>
-          <div class="column btn1 is-5-fullhd is-offset-2 is-5-tablet">
+          <div class="column btn1 is-narrow is-offset-2">
             <div
               class="columns rounded has-background-dark-blue is-mobile has-text-white has-text-weight-bold pointer"
               @click="goTo(projectUrl)"
               v-if="isFullProject"
             >
-              <div class="column px-5 has-text-left is-9">Ver proyecto</div>
-              <div class="column">
+              <div class="column px-5 has-text-left is-narrow">Ver proyecto</div>
+              <div class="column is-narrow">
                 <img src="../assets/svg/arrow.svg" />
               </div>
             </div>
@@ -40,7 +40,7 @@
       <div class="column centered-container">
         <div class="columns">
           <div
-            class="column px-0 is-offset-2 is-9 is-offset-1-mobile is-10-mobile py-1 is-flex"
+            class="column px-0 is-offset-2 is-9 is-offset-1-mobile is-10-mobile py-3 is-flex"
           >
             <slot name="image"></slot>
           </div>

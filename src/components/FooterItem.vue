@@ -1,5 +1,5 @@
 <template>
-    <div class="column centered">
+    <div class="column centered pt-5">
       <div class="columns">
         <div class="column footer-centered">
           <div

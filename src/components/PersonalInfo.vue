@@ -21,7 +21,7 @@
         </p>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns py-2">
       <div class="column is-mobile has-text-centered">
         <p class="has-text-customGrey find-text">FIND ME ON</p>
       </div>
