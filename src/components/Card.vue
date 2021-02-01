@@ -1,13 +1,13 @@
 <template>
   <div
-    :style="'background:' + cardColor"
+    :style="getCardMainStyle"
     class="card-main mx-4 my-3 has-text-centered-mobile"
   >
     <div class="columns py-4 my-0">
-      <div class="column centered-container is-6">
+      <div class="column centered-container">
         <div class="columns is-multiline">
           <div class="column is-10 is-offset-2 paddings">
-            <h3 class="has-text-white opacity-text">{{ projectName }}</h3>
+            <h3 class="has-text-white opacity-text has-text-weight-bold">{{ projectName }}</h3>
           </div>
           <div class="column is-10 is-offset-2 paddings">
             <h1 class="has-text-white has-text-weight-bold">
@@ -37,10 +37,10 @@
           </div>
         </div>
       </div>
-      <div class="column centered-container is-6">
+      <div class="column centered-container">
         <div class="columns">
           <div
-            class="column px-0 is-offset-5-widescreen is-6-widescreen is-offset-4 is-7 is-offset-1-mobile is-10-mobile"
+            class="column px-0 is-offset-5-widescreen is-6-widescreen is-offset-2 is-9 is-offset-1-mobile is-10-mobile py-1 is-flex"
           >
             <slot name="image"></slot>
           </div>
@@ -66,7 +66,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, toRefs, computed } from "vue";
 
 export default defineComponent({
   name: "Card",
@@ -99,8 +99,26 @@ export default defineComponent({
       default: false,
     },
   },
-  setup() {
-    return {};
+  setup(props) {
+    const {cardColor} = toRefs(props)
+    const getCardMainStyle = computed(() => {
+      return `background:${cardColor.value};box-shadow:0px 10px 0px ${hexToRgbA(cardColor.value,'0.3')};`
+    })
+    const hexToRgbA = (hex,opacity) => {
+      let c;
+      if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+          c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return `rgba(${[(c >> 16) & 255, (c >> 8) & 255, c & 255].join(',')},${opacity})`;
+      }
+      throw new Error('Bad Hex');
+    }
+    return {
+      getCardMainStyle
+    };
   },
   methods: {
     goTo (url: string) {
@@ -113,7 +131,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .opacity-text {
   font-weight: 500;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 h3 {
   font-size: 18px;
@@ -174,9 +192,14 @@ h1 {
   color: transparentize($color: $dark-blue, $amount: 0.4);
 }
 .centered-container {
-  @include from($desktop) {
+  /*@include from($desktop) {
     display: flex;
     align-items: center;
+  }*/
+  @include from($tablet) {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
   }
 }
 </style>

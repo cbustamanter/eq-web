@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="columns">
-      <div class="column is-mobile has-text-centered px-6">
+      <div class="column is-mobile has-text-centered info-div">
         <p class="has-text-customGrey is-size-6">
           Passionate about creating innovative and meaningful digital products
           experiences that connects design with human behaviour.
@@ -27,15 +27,15 @@
       </div>
     </div>
     <div
-      class="columns is-mobile has-text-centered has-text-white is-size-6 px-6"
+      class="columns is-mobile centered has-text-white is-size-6 px-6"
     >
-      <div class="column" @click="goTo('https://www.linkedin.com/in/ernestoq96/')">
+      <div class="column is-narrow px-5" @click="goTo('https://www.linkedin.com/in/ernestoq96/')">
         <p class="pointer">LinkedIn</p>
       </div>
-      <div class="column" @click="goTo('https://dribbble.com/Ernestoq')">
+      <div class="column is-narrow px-5" @click="goTo('https://dribbble.com/Ernestoq')">
         <p class="pointer">Dribbble</p>
       </div>
-      <div class="column" @click="goTo('https://www.behance.net/ErnestoQ')">
+      <div class="column is-narrow px-5" @click="goTo('https://www.behance.net/ErnestoQ')">
         <p class="pointer">Behance</p>
       </div>
     </div>
@@ -66,5 +66,9 @@ export default defineComponent({
 }
 .find-text {
   font-size: 14px;
+}
+.info-div {
+  padding-left: 155px;
+  padding-right: 155px;
 }
 </style>

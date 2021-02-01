@@ -24,7 +24,15 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
  */
- $family-sans-serif: "Pangram", sans-serif;
+@font-face {
+ font-family: 'Pangram';
+ src: url("../../fonts/Pangram-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Pangram Bold';
+  src: url("../../fonts/Pangram-Black.otf") format("opentype");
+ }
+ $family-sans-serif: "Pangram";
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 @import "../node_modules/bulma/sass/utilities/functions";
