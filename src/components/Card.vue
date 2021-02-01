@@ -23,8 +23,8 @@
               @click="goTo(projectUrl)"
               v-if="isFullProject"
             >
-              <div class="column px-5 has-text-left is-narrow">Ver proyecto</div>
-              <div class="column is-narrow">
+              <div class="column pl-4 has-text-left is-narrow">Ver proyecto</div>
+              <div class="column pr-4 is-narrow pl-0">
                 <img src="../assets/svg/arrow.svg" />
               </div>
             </div>
@@ -152,7 +152,7 @@ h1 {
   }
 }
 .btn2 {
-  padding-top: 1.5rem;
+  margin-top: 0.5rem;
   @include until($tablet) {
     display: block;
   }
@@ -162,7 +162,7 @@ h1 {
 }
 
 .btn1 {
-  padding-top: 1.3rem;
+  margin-top: 0.5rem;
   @include until($tablet) {
     display: none;
   }

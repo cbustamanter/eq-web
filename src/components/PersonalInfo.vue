@@ -70,7 +70,11 @@ export default defineComponent({
   letter-spacing: 0.12rem;
 }
 .info-div {
-  padding-left: 155px;
-  padding-right: 155px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @include from($tablet) {
+    padding-left: 155px;
+    padding-right: 155px;
+  }  
 }
 </style>
