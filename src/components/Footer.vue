@@ -3,15 +3,15 @@
     <div class="columns">
       <div class="column">
         <p class="has-text-centered px-4 has-text-footerText">
-          Yea that’s all for now, more projects coming soon :)
+          That’s all for now, more projects coming soon :)
         </p>
       </div>
     </div>
     <div class="container">
         <div class="columns">
-            <FooterItem msg1="Ernesto" msg2="Digital Product Designer" />
-            <FooterItem msg1="Social" msg2="Linkedin, Instagram, Behance" />
-            <FooterItem msg1="Contact" msg2="hola@ernestoq.com" />
+            <FooterItem msg1="Ernesto" msg2="UX & Product Designer" />
+            <FooterItem msg1="Social" msg2="Linkedin - Dribbble - Behance" />
+            <FooterItem msg1="Contact" msg2="hola@ernestoq.design" />
         </div>
     </div>    
   </footer>
