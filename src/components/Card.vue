@@ -17,7 +17,7 @@
           <div class="column is-10 is-offset-2 paddings">
             <h2 class="has-text-white">{{ projectDescription }}</h2>
           </div>
-          <div class="column btn1 is-5-fullhd is-offset-2 is-6-tablet">
+          <div class="column btn1 is-5-fullhd is-offset-2 is-5-tablet">
             <div
               class="columns rounded has-background-dark-blue is-mobile has-text-white has-text-weight-bold pointer"
               @click="goTo(projectUrl)"
@@ -52,13 +52,13 @@
           v-if="isFullProject"
           @click="goTo(projectUrl)"
         >
-          <div class="column px-5 has-text-left is-9">Full Project</div>
+          <div class="column px-5 has-text-left is-9">Ver proyecto</div>
           <div class="column">
             <img src="../assets/svg/arrow.svg" />
           </div>
         </div>
         <div class="columns rounded opacity-button has-text-weight-bold" v-else>
-          <div class="column px-5 has-text-centered">Coming soon</div>
+          <div class="column px-5 has-text-centered">En desarrollo</div>
         </div>
       </div>
     </div>
@@ -104,8 +104,8 @@ export default defineComponent({
     const getCardMainStyle = computed(() => {
       return `background:${cardColor.value};box-shadow:0px 10px 0px ${hexToRgbA(cardColor.value,'0.3')};`
     })
-    const hexToRgbA = (hex,opacity) => {
-      let c;
+    const hexToRgbA = (hex: string,opacity: string) => {
+      let c: any;
       if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
         c= hex.substring(1).split('');
         if(c.length== 3){
@@ -152,6 +152,7 @@ h1 {
   }
 }
 .btn2 {
+  padding-top: 1.5rem;
   @include until($tablet) {
     display: block;
   }

@@ -23,7 +23,7 @@
     </div>
     <div class="columns">
       <div class="column is-mobile has-text-centered">
-        <p class="has-text-customGrey find-text">Find me on</p>
+        <p class="has-text-customGrey find-text">FIND ME ON</p>
       </div>
     </div>
     <div
@@ -65,7 +65,9 @@ export default defineComponent({
   border-radius: 4px;
 }
 .find-text {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.12rem;
 }
 .info-div {
   padding-left: 155px;
