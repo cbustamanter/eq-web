@@ -40,7 +40,7 @@
       <div class="column centered-container">
         <div class="columns">
           <div
-            class="column px-0 is-offset-5-widescreen is-6-widescreen is-offset-2 is-9 is-offset-1-mobile is-10-mobile py-1 is-flex"
+            class="column px-0 is-offset-2 is-9 is-offset-1-mobile is-10-mobile py-1 is-flex"
           >
             <slot name="image"></slot>
           </div>
