@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column">
         <p class="has-text-centered px-4 has-text-footerText">
-          That’s all for now, more projects coming soon :)
+          -
         </p>
       </div>
     </div>
